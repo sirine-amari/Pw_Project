@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    <link rel="stylesheet" href="registration.css">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  
+</head>
+<body>
+    <div class="container">
+        <header>Formulaire d'inscrption</header>
+
+        <form action="payment.html">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">des informations personelles</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nom et Prénom</label>
+                            <input type="text" placeholder="Entre votre Nom" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date de naissance</label>
+                            <input type="date" placeholder="Entrez votre date d'anniversaire" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>adresse mail</label>
+                            <input type="text" placeholder="Entrez votre mail" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Numéro de téléphone</label>
+                            <input type="number" placeholder="Entrez votre numéro" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>sexe</label>
+                            <select required>
+                                <option disabled selected>choisissez votre sexe</option>
+                                <option>Homme</option>
+                                <option>Femme</option>
+                                <option>Autres</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Adresse</label>
+                            <input type="text" placeholder="Entrez votre adresse" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Réservation des billets</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>les évenements</label>
+                            <select required>
+                                <option disabled selected>choisissez une évenements </option>
+                                <option>Interliden Museum</option>
+                                <option>Surréalice Illustr'Alice</option>
+                                <option>Musée d'Arts Moderne et Contemporain</option>
+                                <option> La petite France</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>nombres des billets</label>
+                            <input type="number" placeholder="Entrer nombre des billets" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Date d'évenements</label>
+                            <input type="date" placeholder="Entrer date d'évenements" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+                     <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="registration.js"></script> 
+</body>
+</html>

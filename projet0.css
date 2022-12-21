@@ -1,0 +1,586 @@
+body {
+    color: white;
+}
+
+#title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+#top_menu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+#top_picture1 {
+    top: 15px;
+    position: absolute;
+    display: block;
+}
+
+#top_rightmenu {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 15px;
+    border-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    float: right;
+}
+
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 3px 3px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #008673;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    font-family: monospace;
+    flex: auto;
+    width: 100%;
+
+}
+
+nav ul {
+    display: flex;
+
+
+}
+
+nav li {
+    flex: auto;
+}
+
+
+ul {
+    background: black;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 15px;
+}
+
+li {
+    color: #fff;
+    background: black;
+    display: inline-block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    z-index: 1;
+
+}
+
+li a {
+    color: #fff;
+}
+
+li:hover,
+li:focus-within {
+    background: #008673;
+    cursor: pointer;
+}
+
+li:focus-within a {
+    outline: none;
+}
+
+ul li ul {
+    background: #008673;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 0.5rem;
+    left: 0;
+    top: 40px;
+    display: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+#containerbox {
+    position: absolute;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    flex-wrap: nowrap;
+    width: 100%;
+
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("ufr1.jpg");
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+#bottom-left {
+    position: absolute;
+    text-align: left;
+    font-size: 70px;
+    bottom: -270px;
+    left: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    z-index: 1;
+}
+
+#plus-info {
+    position: absolute;
+    text-align: left;
+    font-size: 15px;
+    bottom: -270px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border: #008673;
+    left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: #008673;
+
+
+}
+
+#plus-info>a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#gallerypresent {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+.gallery {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: white;
+    height: 380px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    font-size: 42px;
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    background: #000;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 190px;
+    filter: brightness(50%);
+    transition: transform .3s;
+    border-radius: 10px;
+}
+
+.slide:hover {
+    transform: scale(1.07);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#museum-text {
+    font-size: 60px;
+    position: relative;
+    bottom: 160px;
+    left: 300px;
+    color: white;
+    z-index: 1;
+}
+
+#museum-text2 {
+    font-size: 20px;
+    position: relative;
+    bottom: 160px;
+    left: 300px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#alice-text1 {
+    font-size: 20px;
+    position: relative;
+    bottom: 275px;
+    left: 1520px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#alice-text2 {
+    font-size: 60px;
+    position: relative;
+    bottom: 275px;
+    left: 1500px;
+    color: white;
+    z-index: 1;
+}
+
+#museum2-text1 {
+    font-size: 20px;
+    position: relative;
+    bottom: 420px;
+    left: 2860px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#museum2-text2 {
+    font-size: 55px;
+    position: relative;
+    bottom: 420px;
+    left: 2860px;
+    color: white;
+    z-index: 1;
+}
+
+#petite-text1 {
+    font-size: 20px;
+    position: relative;
+    bottom: 505px;
+    left: 4200px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+
+}
+
+#petite-text2 {
+    font-size: 55px;
+    position: relative;
+    bottom: 505px;
+    left: 4200px;
+    color: white;
+    z-index: 1;
+    right: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+/* -----------------------sirine-------------------- */
+
+
+
+footer {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    background-color: black;
+    list-style: none;
+    padding-right: 0;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+
+}
+
+
+
+.footer-col {
+    width: 30%;
+    padding: 0px;
+    color: white;
+    margin-inline: auto;
+}
+
+.footer-col h3 {
+    padding-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+
+.liste li {
+    font-family: arial;
+    font-size: small;
+    line-height: 30px;
+}
+
+.backImg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.backImg img {
+    margin-inline: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-col h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    position: relative;
+    left: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:active {
+    color: none;
+}
+
+footer a:active {
+    color: none;
+}
+
+
+
+.row1-head {
+    display: inline-flex;
+    margin-bottom: 30px;
+    text-align: left;
+
+
+
+}
+
+.reste {
+    display: inline-block;
+    font-size: 20px;
+    text-align: left;
+    padding: 9px 3px 0 10px;
+
+
+}
+
+.reste span {
+    padding-left: 9px;
+}
+
+.row1-body div {
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.social-links a {
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    border: 1px solid white;
+    outline: 2px, solid #ffffff;
+}
+
+.splitBar {
+    border: 0.5px solid #ffffff6b
+}
+
+.liste {
+    position: relative;
+    left: 100px
+}
+
+.row1 {
+    left: 60px;
+}
+
+.vl {
+    border-left: 0.5px inset white;
+    height: 230px;
+    position: absolute;
+    left: 60%;
+    margin-left: -3px;
+    top: 88%;
+
+}
+
+.fotterLinkContainer {
+    left: 100px
+}
+
+.footerLink {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLink li {
+    padding-block: 5px;
+    padding-inline: 10px;
+}
+
+.row3 {
+    display: inline-block;
+
+}
+
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 20px;
+}
+
+.descriptionContainer {
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.descriptionTitleConatiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descriptionTitleLogo {
+    font-family: savaneta, ;
+    font-size: 50px;
+    padding-left: 30 px;
+}
+
+.descriptionTitle {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: savaneta, ;
+    font-weight: 700;
+}
+
+.block {
+    padding-block: 10px;
+}
+
+.block div {
+    font-size: 12px;
+    font-family: Rubik, sans-serif;
+    color: #ffffffad;
+}
